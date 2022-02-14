@@ -876,7 +876,7 @@ animate({
 			Element.prototype.msMatchesSelector;
 	}
 })();
-alert('привет я работаю')
+
 
 
 
