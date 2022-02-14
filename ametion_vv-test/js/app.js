@@ -1,5 +1,5 @@
 
-//BildSlider
+// //BildSlider
 let sliders = document.querySelectorAll('._swiper');
 if (sliders) {
 	for (let index = 0; index < sliders.length; index++) {
@@ -64,77 +64,79 @@ function sliders_bild_callback(params) { }
 
 
 
-if(document.querySelector('.slider-faq__body')) {
-	new Swiper('.slider-faq__body', {
+// if(document.querySelector('.slider-faq__body')) {
+// 	new Swiper('.slider-faq__body', {
 	   
-		// effect: 'fade',
-		// autoplay: {
-		// 	delay: 3000,
-		// 	disableOnInteraction: false,
-		// },
+// 		// effect: 'fade',
+// 		// autoplay: {
+// 		// 	delay: 3000,
+// 		// 	disableOnInteraction: false,
+// 		// },
 		
 		
-		slidesPerView: 3.5,
-		spaceBetween: 30,
-		// autoHeight: true,
-		speed: 800,
-		//touchRatio: 0,
-		//simulateTouch: false,
-		//loop: true,
-		//preloadImages: false,
-		//lazy: true,
-		// Dotts
-		//pagination: {
-		//	el: '.slider-quality__pagging',
-		//	clickable: true,
-		//},
-		// Arrows
-		navigation: {
-			nextEl: '.slider-arrow_next',
-			prevEl: '.slider-arrow_prev',
-		},
+// 		slidesPerView: 3.5,
+// 		spaceBetween: 30,
+// 		// autoHeight: true,
+// 		speed: 800,
+// 		//touchRatio: 0,
+// 		//simulateTouch: false,
+// 		//loop: true,
+// 		//preloadImages: false,
+// 		//lazy: true,
+// 		// Dotts
+// 		//pagination: {
+// 		//	el: '.slider-quality__pagging',
+// 		//	clickable: true,
+// 		//},
+// 		// Arrows
+// 		navigation: {
+// 			nextEl: '.slider-arrow_next',
+// 			prevEl: '.slider-arrow_prev',
+// 		},
 		
-		breakpoints: {
-			320: {
-				slidesPerView:1,
-				spaceBetween: 10,
-			},
-			530: {
-				slidesPerView: 1.5,
-				spaceBetween: 10,
-			},
-			612: {
-				slidesPerView: 1.9,
-				spaceBetween: 10,
-			},
-			768: {
-				slidesPerView: 2.6,
-				spaceBetween: 10,
-			},
-			992: {
-				slidesPerView: 3,
-				spaceBetween: 15,
-			},
+// 		breakpoints: {
+// 			320: {
+// 				slidesPerView:1,
+// 				spaceBetween: 10,
+// 			},
+// 			530: {
+// 				slidesPerView: 1.5,
+// 				spaceBetween: 10,
+// 			},
+// 			612: {
+// 				slidesPerView: 1.9,
+// 				spaceBetween: 10,
+// 			},
+// 			768: {
+// 				slidesPerView: 2.6,
+// 				spaceBetween: 10,
+// 			},
+// 			992: {
+// 				slidesPerView: 3,
+// 				spaceBetween: 15,
+// 			},
           
-			1268: {
-				slidesPerView: 4,
-				spaceBetween: 24,
-			},
+// 			1268: {
+// 				slidesPerView: 4,
+// 				spaceBetween: 24,
+// 			},
 
 			
-		},
+// 		},
 		
-		// on: {
-		// 	lazyImageReady: function () {
-		// 		ibg();
-		// 	},
-		// }
-		// And if we need scrollbar
-		//scrollbar: {
-		//	el: '.swiper-scrollbar',
-		//},
-	});
-}
+// 		// on: {
+// 		// 	lazyImageReady: function () {
+// 		// 		ibg();
+// 		// 	},
+// 		// }
+// 		// And if we need scrollbar
+// 		//scrollbar: {
+// 		//	el: '.swiper-scrollbar',
+// 		//},
+// 	});
+// }
+
+
 var ua = window.navigator.userAgent;
 var msie = ua.indexOf("MSIE ");
 var isMobile = { Android: function () { return navigator.userAgent.match(/Android/i); }, BlackBerry: function () { return navigator.userAgent.match(/BlackBerry/i); }, iOS: function () { return navigator.userAgent.match(/iPhone|iPad|iPod/i); }, Opera: function () { return navigator.userAgent.match(/Opera Mini/i); }, Windows: function () { return navigator.userAgent.match(/IEMobile/i); }, any: function () { return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows()); } };
@@ -928,3 +930,43 @@ animate({
 	}
 })();
 
+
+
+$(document).ready(function(){
+	$('.slider-faq__body').slick({
+		dots: false,
+		infinite: false,
+		speed: 300,
+		slidesToShow: 4,
+		slidesToScroll: 1,
+		variableWidth: true,
+		responsive: [
+		  {
+			 breakpoint: 1024,
+			 settings: {
+				slidesToShow: 3,
+				slidesToScroll: 3,
+				
+				
+			 }
+		  },
+		  {
+			 breakpoint: 600,
+			 settings: {
+				slidesToShow: 2,
+				slidesToScroll: 2
+			 }
+		  },
+		  {
+			 breakpoint: 480,
+			 settings: {
+				slidesToShow: 1,
+				slidesToScroll: 1
+			 }
+		  }
+		  // You can unslick at a given breakpoint now by adding:
+		  // settings: "unslick"
+		  // instead of a settings object
+		]
+	 });
+});

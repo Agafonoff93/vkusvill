@@ -541,6 +541,10 @@ body.ie ._ibg img {
   transition: all 0.3s ease 0s;
 }
 
+.call-us__link_btn img {
+  margin-right: 8px;
+}
+
 .page {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
@@ -704,6 +708,7 @@ body.ie ._ibg img {
 }
 
 .slider-faq__slide {
+  margin: 0 20px 0 0;
   padding: 16px;
   background: #FFFFFF;
   -webkit-box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.05);
@@ -735,93 +740,6 @@ body.ie ._ibg img {
 .slider-faq__text {
   color: #949494;
   line-height: 135%;
-}
-
-.slider-arrows {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  pointer-events: none;
-}
-
-.slider-arrow {
-  position: relative;
-  z-index: 2;
-  width: 44px;
-  height: 44px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  border-radius: 50%;
-  background: white;
-  -webkit-box-shadow: 0px 1px 7px rgba(0, 0, 0, 0.09);
-          box-shadow: 0px 1px 7px rgba(0, 0, 0, 0.09);
-  -webkit-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-}
-
-.slider-arrow_prev {
-  pointer-events: all;
-  -webkit-transform: rotate(-180deg);
-      -ms-transform: rotate(-180deg);
-          transform: rotate(-180deg);
-  -webkit-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-}
-
-.slider-arrow_prev.swiper-button-disabled {
-  opacity: 0;
-  pointer-events: none;
-}
-
-.slider-arrow_prev::after {
-  content: "";
-  display: inline-block;
-  -webkit-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-  width: 8px;
-  height: 12px;
-  background: url("../img/icons/arrow.svg") center/100% no-repeat;
-}
-
-.slider-arrow_next {
-  pointer-events: all;
-}
-
-.slider-arrow_next.swiper-button-disabled {
-  opacity: 0;
-  pointer-events: none;
-}
-
-.slider-arrow_next::after {
-  content: "";
-  display: inline-block;
-  -webkit-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-  width: 7px;
-  height: 12px;
-  background: url("../img/icons/arrow.svg") center/100% no-repeat;
 }
 
 .help .help__title {
@@ -884,6 +802,115 @@ body.ie ._ibg img {
   color: #949494;
   margin: 0 24px 0 8px;
 }
+
+/* Слайдер */
+
+/* Слайдер запущен */
+
+/* Слайдер с точками */
+
+/* Ограничивающая оболочка */
+
+/* Лента слайдов */
+
+.slick-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* Слайд */
+
+/* Слайд активный (показывается) */
+
+/* Слайд основной */
+
+/* Слайд по центру */
+
+/* Клонированный слайд */
+
+/* Стрелка */
+
+.slick-arrow {
+  font-size: 0;
+  width: 44px;
+  height: 44px;
+  top: 50%;
+  margin-top: -22px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+  background: white;
+  -webkit-box-shadow: 0px 1px 7px rgba(0, 0, 0, 0.09);
+          box-shadow: 0px 1px 7px rgba(0, 0, 0, 0.09);
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+/* Стрелка влево */
+
+.slick-arrow.slick-prev {
+  z-index: 2;
+  position: absolute;
+  left: 0;
+  -webkit-transform: rotate(-180deg);
+      -ms-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.slick-arrow.slick-prev::after {
+  content: "";
+  display: inline-block;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  width: 7px;
+  height: 12px;
+  background: url("../img/icons/arrow.svg") center/100% no-repeat;
+}
+
+/* Стрелка вправо */
+
+.slick-arrow.slick-next {
+  z-index: 2;
+  position: absolute;
+  right: 0;
+}
+
+.slick-arrow.slick-next::after {
+  content: "";
+  display: inline-block;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  width: 7px;
+  height: 12px;
+  background: url("../img/icons/arrow.svg") center/100% no-repeat;
+}
+
+/* Стрелка не активная */
+
+.slick-arrow.slick-disabled {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Точки (булиты) */
+
+/* Активная точка */
+
+/* Элемент точки */
 
 @media (min-width: 1212px) {
   .join__container {
@@ -1029,10 +1056,6 @@ body.ie ._ibg img {
     font-size: 24px;
   }
 
-  .slider-arrows {
-    display: none;
-  }
-
   .help .help__title {
     font-size: 24px;
   }
@@ -1082,12 +1105,12 @@ body.ie ._ibg img {
             box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
   }
 
-  .slider-arrow:hover {
+  .help .help__link:hover {
     -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
             box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
   }
 
-  .help .help__link:hover {
+  .slick-arrow:hover {
     -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
             box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
   }
