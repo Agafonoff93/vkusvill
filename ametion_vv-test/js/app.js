@@ -953,6 +953,7 @@ $(document).ready(function(){
 		  {
 			 breakpoint: 600,
 			 settings: {
+				arrows: false,
 				slidesToShow: 2,
 				slidesToScroll: 2
 			 }
@@ -960,6 +961,7 @@ $(document).ready(function(){
 		  {
 			 breakpoint: 480,
 			 settings: {
+				arrows: false,
 				slidesToShow: 1,
 				slidesToScroll: 1
 			 }

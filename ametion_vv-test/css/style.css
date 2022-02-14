@@ -686,6 +686,10 @@ body.ie ._ibg img {
   transition: all 0.3s ease 0s;
 }
 
+.join__link:hover svg rect {
+  fill: #dddddd;
+}
+
 .faq__body {
   margin-bottom: 84px;
 }
@@ -721,6 +725,11 @@ body.ie ._ibg img {
   -webkit-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
+}
+
+.slider-faq__slide:hover {
+  -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
 }
 
 .slider-faq__title {
@@ -788,6 +797,11 @@ body.ie ._ibg img {
   right: 0px;
 }
 
+.help .help__link:hover {
+  -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
 .help .help__title-link {
   color: #1a1a1a;
   font-weight: 700;
@@ -853,6 +867,11 @@ body.ie ._ibg img {
   -webkit-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
+}
+
+.slick-arrow:hover {
+  -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
 }
 
 /* Стрелка влево */
@@ -1094,24 +1113,5 @@ body.ie ._ibg img {
 
   .call-us__link:not(:first-child):hover svg rect {
     fill: #dddddd;
-  }
-
-  .join__link:hover svg rect {
-    fill: #dddddd;
-  }
-
-  .slider-faq__slide:hover {
-    -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
-            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
-  }
-
-  .help .help__link:hover {
-    -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
-            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
-  }
-
-  .slick-arrow:hover {
-    -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
-            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
   }
 }
