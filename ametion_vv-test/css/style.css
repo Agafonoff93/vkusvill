@@ -545,6 +545,10 @@ body.ie ._ibg img {
   margin-right: 8px;
 }
 
+.call-us:hover svg rect {
+  fill: #dddddd;
+}
+
 .page {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
@@ -1109,9 +1113,5 @@ body.ie ._ibg img {
 
   ._btn:hover {
     background: #d3e3f6;
-  }
-
-  .call-us__link:not(:first-child):hover svg rect {
-    fill: #dddddd;
   }
 }
