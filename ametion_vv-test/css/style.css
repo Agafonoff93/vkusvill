@@ -545,8 +545,8 @@ body.ie ._ibg img {
   margin-right: 8px;
 }
 
-.call-us:hover svg rect {
-  fill: #dddddd;
+.call-us__link:hover svg rect {
+  fill: #c4c4c4;
 }
 
 .page {
