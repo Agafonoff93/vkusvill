@@ -401,6 +401,7 @@ body._lock {
 
 .main-banner__link img {
   margin-right: 7px;
+  vertical-align: middle;
 }
 
 .join__body {
